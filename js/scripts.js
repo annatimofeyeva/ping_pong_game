@@ -18,21 +18,35 @@ $(document).ready(function() {
     alert(numbersOfInt);
 
 
-/*if (number % 3 === 0){
+    $(function() {
+      var alert = $('div.alert[auto-close]');
+      alert.each(function() {
+        var that = $(this);
+        var time_period = that.attr('auto-close');
+        setTimeout(function() {
+          that.alert('close');
+        }, time_period);
+      });
+    });
+
+
+if (number % 3 === 0){
   $("li").append("ping");
   $("#result").show();
 } else if (number % 5 === 0){
-  $("li").append("ping");
+  $("li").append("pong");
   $("#result").show();
-}*/
+} else if (number % 15 === 0){
+  ("li").append("ping-pong");
+  $("#result").show();
+} else if (numbersOfInt === 0){
+  $("#error_mes_two").show();
+} else if {numbersOfInt === 
+
+}
+else
 
 
-
-    $("li").append("hello");
-    $("#result").show();
-
-
-     //$('tr').append();
 
 
 

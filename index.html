@@ -5,8 +5,11 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <title>Portfolio</title>
-  </head>
+</head>
 <body>
   <div class="container">
     <div class="well" id="header">
@@ -33,10 +36,17 @@
             <button type="submit" class="btn">Ping Pong!</button>
           </form>
     </div>
-    <div class="well" id="result"
-      <ul>
-        <li></li>
+    <div class="well" id="result" <ul>
+      <li></li>
       </ul>
+    </div>
+    <div id="error_mes_one" class="alert alert-danger alert-dismissible" role="alert" auto-close="3000">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span>
+  </button> Please, enter a number!
+    </div>
+    <div id="error_mes_two" class="alert alert-success alert-dismissible" role="alert" auto-close="5000">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span>
+  </button> Please, enter a valid number!
     </div>
   </div>
 </body>

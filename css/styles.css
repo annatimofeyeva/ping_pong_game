@@ -12,3 +12,9 @@ ol{
 #result{
   display:none;
 }
+#error_mes_one{
+  display: none;
+}
+#error_mes_two{
+  display: none;
+}
