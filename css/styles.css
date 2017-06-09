@@ -8,5 +8,7 @@ ol{
   color: #751e52;
   font-size: 24px;
   font-weight: bold;
-
+}
+li{
+  display:none;
 }
