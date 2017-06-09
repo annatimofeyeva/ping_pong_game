@@ -13,28 +13,43 @@ $(document).ready(function() {
      var inputNumbers = $("input#number").val();
     console.log(inputNumbers);
      var inputNumbersArr = inputNumbers.split("");
-    console.log(inputNumbersArr);
-    alert(inputNumbers);
+     alert(inputNumbersArr);
      var numbersOfInt = inputNumbersArr.length;
-    console.log(numbersOfInt);
     alert(numbersOfInt);
 
-  for (index=0; index<numbersOfInt;index ++) {
 
-  
-
-
-
-  }
-
-
-
+/*if (number % 3 === 0){
+  $("li").append("ping");
+  $("#result").show();
+} else if (number % 5 === 0){
+  $("li").append("ping");
+  $("#result").show();
+}*/
 
 
 
-    //var imputNumberArray = inputNumber.split("");
-    //alert(imputNumberArray);
-    //var numberOfIntegers = imputNumberArray.length;
+    $("li").append("hello");
+    $("#result").show();
+
+
+     //$('tr').append();
+
+
+
+
+
+
+
+
+  /*for (index=0; index<=numbersOfInt; index ++) {
+      $("ul#ping_result").append(<li>inputNumbersArr[index]</li>);
+      $("#result").show();
+  }*/
+
+
+
+
+
 
   });
 });

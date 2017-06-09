@@ -9,6 +9,6 @@ ol{
   font-size: 24px;
   font-weight: bold;
 }
-li{
+#result{
   display:none;
 }
