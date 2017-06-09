@@ -43,7 +43,7 @@ $(document).ready(function() {
 
     </script>
 
-
+//add gif image with onclick
 
 
 for (index=0; index <=numbersOfInt; index ++)    {
