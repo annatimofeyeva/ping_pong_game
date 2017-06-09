@@ -10,7 +10,7 @@ A web application that takes a number from a user and returns a range of numbers
 |Behavior - Plain English|Input|Output|
 |---|---|---|
 |It can count up to provided number|"2"|"[1,2]"|
-|Numbers divisible by 3 should be replaced with "ping" |"3"|"ping"|
+|Numbers divisible by 3 are replaced with "ping" |"3"|"ping"|
 |Numbers divisible by 5 are replaced with "pong"|"10"|"pong"|
 |Numbers divisible by 15 are replaced with "pong"|"10"|"ping-pong"|
 
