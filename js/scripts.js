@@ -1,4 +1,19 @@
-//business logic
+//Business logic
+function get_ping_pong_data(limit) {
+  var result = [];
+  for (index = 1; index <= limit; index++) {
+    if (index % 15 === 0) {
+      result.push("ping-pong");
+    } else if (index % 3 === 0) {
+      result.push("ping");
+    } else if (index % 5 === 0) {
+      result.push("pong");
+    } else {
+      result.push(index);
+    }
+  }
+  return result;
+}
 
 //User interface logic:
 $(document).ready(function() {
@@ -17,16 +32,8 @@ $(document).ready(function() {
     }
     $("#error_mes_one").hide();
     $("#ping_number").val("");
-    for (index = 1; index <= limit; index++) {
-      if (index % 15 === 0) {
-        $("#ping_list").append("<li>ping-pong</li>");
-      } else if (index % 3 === 0) {
-        $("#ping_list").append("<li>ping</li>");
-      } else if (index % 5 === 0) {
-        $("#ping_list").append("<li>pong</li>");
-      } else {
-        $("#ping_list").append("<li>" + index + "</li>");
-      }
-    }
+    get_ping_pong_data(limit).forEach(function(element) {
+      $("#ping_list").append("<li>" + element + "</li>");
+    });
   });
 });
