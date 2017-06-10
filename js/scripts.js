@@ -2,11 +2,22 @@
 
 //User interface logic:
 $(document).ready(function() {
+  $(function() {
+    $("[data-hide]").on("click", function() {
+      $(this).closest("." + $(this).attr("data-hide")).hide();
+    });
+  });
   $("#ping_button").click(function() {
-    var limit = $("#ping_number").val();
+    var limit = parseInt($("#ping_number").val());
+    console.log(limit);
     $("#ping_list").empty();
+    if (isNaN(limit) || limit < 1) {
+      $("#error_mes_one").show();
+      return;
+    }
+    $("#error_mes_one").hide();
     $("#ping_number").val("");
-    for (index = 1; index < limit; index++) {
+    for (index = 1; index <= limit; index++) {
       if (index % 15 === 0) {
         $("#ping_list").append("<li>ping-pong</li>");
       } else if (index % 3 === 0) {

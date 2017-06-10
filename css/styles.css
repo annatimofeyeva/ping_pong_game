@@ -15,3 +15,22 @@ ol{
 #error_mes_two{
   display: none;
 }
+#list_play{
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+p{
+  font-size: 16px;
+}
+#game_title{
+  color: #751e52;
+}
+#content{
+  padding-bottom: 150px;
+}
+#ping_number{
+  width: 99%
+}
+#ping_button{
+  color: #751e52;
+}
