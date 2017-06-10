@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="js/jquery-3.2.1.js"></script>
-  <script src="js/scripts.js"></script>
-  <script src="https://code.jquery.com/jquery.min.js"></script>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <title>Portfolio</title>
-</head>
-
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <title>Ping Pong game</title>
+  </head>
 <body>
   <div class="container">
     <div class="well" id="header">
@@ -30,32 +28,22 @@
             <li>Numbers divisible by 5 are replaced with "pong"</li>
             <li>Numbers divisible by 15 are replaced with "ping-pong"</li>
           </ol>
-          <form>
-            <div class="form-group">
-              <label for="string">Enter a number:</label>
-              <input id="number" type="text">
-            </div>
-            <button type="submit" class="btn btn-lg">Ping Pong!</button>
-          </form>
+          <div class="input-group">
+            <input id="ping_number" type="text" class="form-control" placeholder="Please enter a number...">
+            <span class="input-group-btn">
+                  <button id="ping_button" class="btn btn-secondary" type="button">Ping Pong!</button>
+                </span>
+          </div>
+          <ul id="ping_list">
+          </ul>
+          <div id="error_mes_one" class="alert alert-danger alert-dismissible" role="alert" auto-close="3000">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span>
+            </button> Please, enter a number!
+          </div>
+          <div id="error_mes_two" class="alert alert-success alert-dismissible" role="alert" auto-close="5000">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span>
+            </button> Please, enter a valid number!
+          </div>
     </div>
-
-    <input type="button" class="btn btn-lg" value="Refresh Page" id="btnRefresh">
-    <img id="ping" src="images/action/animation/UploadStatus.gif"/>
-
-
-    <div class="well" id="result" <ul>
-      <li></li>
-      </ul>
-    </div>
-    <div id="error_mes_one" class="alert alert-danger alert-dismissible" role="alert" auto-close="3000">
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span>
-  </button> Please, enter a number!
-    </div>
-    <div id="error_mes_two" class="alert alert-success alert-dismissible" role="alert" auto-close="5000">
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span>
-  </button> Please, enter a valid number!
-    </div>
-  </div>
 </body>
-
 </html>

@@ -9,9 +9,6 @@ ol{
   font-size: 24px;
   font-weight: bold;
 }
-#result{
-  display:none;
-}
 #error_mes_one{
   display: none;
 }
