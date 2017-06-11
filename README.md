@@ -12,7 +12,10 @@ A web application that takes a number from a user and returns a range of numbers
 |It can count up to provided number|"2"|"[1,2]"|
 |Numbers divisible by 3 are replaced with "ping" |"3"|"ping"|
 |Numbers divisible by 5 are replaced with "pong"|"10"|"pong"|
-|Numbers divisible by 15 are replaced with "pong"|"15"|"ping-pong"|
+|Numbers divisible by 15 are replaced with "ping-pong"|"15"|"ping-pong"|
+|If the user enters a none number - error message is displayed|"qqqq"|"error message"|
+|if the user enters nothing - error message is displayed|" "|"error"|
+|if the user enters number less than 1 - error message is displayed|"0"|"error"|
 
 ## What's included
 Within the repository you'll find the following directories and files:
