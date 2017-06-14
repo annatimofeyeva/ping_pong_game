@@ -1,15 +1,19 @@
 //Business logic
 function get_ping_pong_data(limit) {
-  var result = [];
+  var result = {data: [], error: false};
+  if (isNaN(limit) || limit < 1) {
+    result.error = true;
+    return result;
+  }
   for (index = 1; index <= limit; index++) {
     if (index % 15 === 0) {
-      result.push("ping-pong");
+      result.data.push("ping-pong");
     } else if (index % 3 === 0) {
-      result.push("ping");
+      result.data.push("ping");
     } else if (index % 5 === 0) {
-      result.push("pong");
+      result.data.push("pong");
     } else {
-      result.push(index);
+      result.data.push(index);
     }
   }
   return result;
@@ -24,15 +28,15 @@ $(document).ready(function() {
   });
   $("#ping_button").click(function() {
     var limit = parseInt($("#ping_number").val());
-    console.log(limit);
+    var result = get_ping_pong_data(limit);
     $("#ping_list").empty();
-    if (isNaN(limit) || limit < 1) {
+    if (result.error) {
       $("#error_mes_one").show();
       return;
     }
     $("#error_mes_one").hide();
     $("#ping_number").val("");
-    get_ping_pong_data(limit).forEach(function(element) {
+    result.data.forEach(function(element) {
       $("#ping_list").append("<li>" + element + "</li>");
     });
   });
